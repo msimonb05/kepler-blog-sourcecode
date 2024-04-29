@@ -1,0 +1,360 @@
+/* Follow template to other pages 
+   Retains style for header and footer */
+
+* {
+    margin: 0;
+    padding: 0;
+    /*
+    Black color: #1B1B1B
+    White color: #FEFEFA
+    */
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #FEFEFA;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 0;
+}
+
+.display-alert {
+    display: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    background-color: #1B1B1B;
+    color: #FEFEFA;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    padding: 0px 0px 0px 20px;
+    filter: invert();
+    cursor: pointer;
+}
+
+.header-title {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 1.5rem;
+    padding: 0px 0px 0px 15px;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.75rem;
+    color: #FEFEFA;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #FEFEFA;
+    padding: 0px 20px;
+}
+
+nav ul a.nav-active {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    text-decoration: none;
+    color: #FEFEFA;
+    padding: 0px 20px;
+}
+
+nav ul a:hover {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+.hamburger-menu {
+    display: none;
+    color: #FEFEFA;
+    padding: 0px 15px;
+}
+
+.contact-title-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/resources/images/space02.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FEFEFA;
+    
+    h1 {
+        font-family: "Zen Dots", sans-serif;
+        font-size: 8rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 90px;
+        text-shadow: 0 4px 8px #1B1B1B;
+    }
+}
+
+.contact-title {
+    padding: 30px 50px;
+    text-align: center;
+
+    h1 {
+        font-family: "Zen Dots", sans-serif;
+        font-size: 6rem;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin:  20px auto 20px auto;
+    resize: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.5rem;
+    border: #1B1B1B solid;
+    background-color: #FEFEFA;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: #F0F0EE;
+    transition: 0.2s;
+}
+
+.contact-form input {
+    width: 50%;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.contact-form textarea {
+    width: 50%;
+    height: 150px;
+    padding: 20px 20px;
+}
+
+.contact-form button {
+    display: block;
+    margin:  20px auto 20px auto;
+    padding: 10px 20px;
+    border: 3px solid #1B1B1B;
+    background-color: transparent;
+    color: #1B1B1B;
+    cursor: pointer;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    img {
+        padding-left: 5px;
+    }
+}
+
+.contact-form button:hover {
+    border: 3px solid #1B1B1B;
+    background-color: #1B1B1B;
+    color: #FEFEFA;
+    transition: 0.2s;
+
+    img {
+        filter: invert();
+        transition: 0.2s;
+        padding-left: 5px;
+    }
+}
+
+.contact-form p,
+.contact-form a {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.15rem;
+    text-align: center;
+    color: #1B1B1B;
+    padding: 0 0px 20px;
+}
+
+footer {
+    background-color: #1B1B1B;
+    color: #FEFEFA;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    
+    #timeDate {
+        padding: 15px 0 5px;
+    }
+
+    p {
+        padding: 0 10px;
+        font-size: 1.3rem;
+    }
+}
+
+.social-media a {
+    padding: 15px 0;
+    width: 70px;
+    font-size: 1.75rem;
+    color: #FEFEFA;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #FEFEFABA;
+    transition: 0.2s;
+}
+
+#back-to-top {
+    position: fixed;
+    width: 40px;
+    height: auto;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 259px) {
+    .display-alert {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color:  #FADA5E;
+
+        h1 {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 300;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 52.5%;
+    }
+
+    .header-logo img {
+        width: 40px;
+        height: 40px;
+        padding: 0px 0px 0px 10px;
+        filter: invert();
+        cursor: pointer;
+    }
+    
+    .header-title {
+        font-family: "Zen Dots", sans-serif;
+        font-size: 1.5rem;
+        padding: 0px 0px 0px 15px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        top: -10px;
+        display: flex;
+        color: #FEFEFA;
+        padding: 0px 10px;
+        font-size: 1rem;
+    }
+
+    .contact-title {
+        padding: 15px 30px;
+        h1 {
+            font-size: 5rem;
+        }
+    
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    nav ul a {
+        display: none;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        top: -10px;
+        display: inline-block;
+        color: #FEFEFA;
+        padding: 0px 0px 0px 0px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .sidebar-nav {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        background-color: #FEFEFA;
+        min-width: 160px;
+        box-shadow: 0 8px 16px #1B1B1B35;
+        text-align: right;
+    }
+
+    .sidebar-nav a {
+        display: block;
+        font-size: 1.75rem;
+        color: #1B1B1B;
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+
+    .sidebar-nav a:hover {
+        background-color: #DFDFDC;
+    }
+
+    .hamburger-menu:hover .sidebar-nav {
+        display: block;
+    }
+
+    .contact-title-2 h1 {
+        font-size: 4rem;
+        padding: 65px 20px;
+    }
+
+    .social-media a {
+        width: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Responsive style here */
+}
+
+@media (min-width: 2500px) {
+    /* Responsive style here */
+}

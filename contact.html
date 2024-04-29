@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepler Blog | Contact</title>
+    <link rel="icon" type="image/x-icon" href="resources/images/kepler-blog-favicon.ico">
+    <link rel="stylesheet" href="resources/style/contactStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/script/script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</head>
+<body onload="timeDate()">
+    <div class="display-alert">
+        <h1>
+            This website <b>might not properly function</b> at this screen dimension.<br>
+            Sorry for the inconvenience.
+        </h1>
+    </div>
+    <header>
+        <div class="header-logo" onclick="window.location.href='index.html'" title="Kepler Blog">
+            <img src="resources/images/kepler-blog-favicon.png" alt="Kepler Blog Logo">
+            <div class="header-title">
+                <h2>KEPLER<br>BLOG</h2>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html" title="Home">
+                    <li>Home</li>
+                </a>
+                <a href="services.html" title="Services">
+                    <li>Services</li>
+                </a>
+                <a href="about.html" title="About">
+                    <li>About</li>
+                </a>
+                <a href="contact.html" class="nav-active" title="Contact">
+                    <li>Contact</li>
+                </a>
+                <div class="hamburger-menu" title="Menu">
+                    <h1>☰</h1>
+                    <div class="sidebar-nav">
+                        <a href="index.html" title="Home">Home</a>
+                        <a href="services.html" title="Services">Services</a>
+                        <a href="about.html" title="About">About</a>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-title-2">
+            <h1 title="Contact Me">CONTACT<br>ME</h1>
+        </div>
+        <div class="contact-title">
+            <h2>
+                Reach for the stars and reach out to me! Let us connect in the cosmos.
+            </h2>
+        </div>
+        <div class="contact-form-div">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="2aa3597d-57f5-4205-8278-f75176957f84">
+                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                <textarea name="message" placeholder="Your Message" class="contact-input"></textarea>
+                <button type="submit" title="Submit">
+                    Submit
+                    <img src="resources/images/right-arrow.png" alt="" style="width: 12px; height: 12px;">
+                </button>
+                <p>This service is powered by <a href="https://web3forms.com/" target="_blank">Web3Forms</a>. Copyright &copy; 2024.</p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p id="timeDate"></p>
+        <p>&copy; 2024 Kepler Blog. Created by Mark Simon Bringas. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/msimonb05" class="fa fa-facebook" title="Facebook"></a>
+            <a href="https://twitter.com/msimonb_05" class="fa fa-twitter" title="X/Twitter"></a>
+            <a href="https://www.instagram.com/msimonb_05/" class="fa fa-instagram" title="Instagram"></a>
+            <a href="https://github.com/msimonb05" class="fa fa-github" title="Github"></a>
+            <a href="https://www.linkedin.com/in/mark-simon-bringas-665a932a1/" class="fa fa-linkedin" title="LinkedIn"></a>
+        </div>
+    </footer>
+    <img id="back-to-top" src="resources/images/scroll-to-top.png" alt="Scroll to Top" title="Scroll to Top">
+</body>
+</html>
